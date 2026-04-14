@@ -25,9 +25,6 @@ method = args.method
 file = args.file
 payload = bool(file)
 
-if port < 1 or port > 65535:
-	sys.exit("Port number has to be between 1 and 65535")
-
 if method == "GET" and payload:
 	sys.exit("GET doesn't support sending payload")
 
